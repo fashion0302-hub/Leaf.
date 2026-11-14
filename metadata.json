@@ -1,0 +1,8 @@
+{
+  "name": "Leaf. — 오래도록 나다운 선택",
+  "description": "의류 선주문과 라이프스타일, 커뮤니티, 자기성찰 콘텐츠, 힐링 프로그램이 공존하는 Warm Human Journal 브랜드 플랫폼",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

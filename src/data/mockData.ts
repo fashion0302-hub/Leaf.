@@ -1,0 +1,680 @@
+import heroLifestyleImg from '../assets/images/leaf_hero_knit_lifestyle_1794635697848.jpg';
+import robeImg from '../assets/images/leaf_product_robe_1794635697868.jpg';
+import knitImg from '../assets/images/leaf_product_knit_1794635698175.jpg';
+import teeBottomsImg from '../assets/images/leaf_product_tee_bottoms_1794635698214.jpg';
+import atelierImg from '../assets/images/leaf_making_atelier_1794635699149.jpg';
+import experienceAromaImg from '../assets/images/leaf_experience_aroma_1794635699712.jpg';
+
+import type {
+  AboutContent,
+  ArchiveEntry,
+  CircleComment,
+  CirclePost,
+  ExperienceProgram,
+  HeroContent,
+  JournalPost,
+  MindsetPost,
+  Product,
+} from '../types/leaf';
+
+export const INITIAL_HERO: HeroContent = {
+  overline: 'A LIFE IN YOUR OWN RHYTHM',
+  headline: '오래도록 나다운 선택.',
+  subcopy:
+    '옷을 고르는 마음에서 시작해 삶의 이야기로 이어지는 브랜드, Leaf. 충분히 알고 선택한 옷을 오래 입고 돌보며, 스스로의 취향과 일상을 천천히 돌아봅니다.',
+  primaryCtaLabel: '현재 선주문 보기',
+  secondaryCtaLabel: '브랜드 이야기 읽기',
+  desktopImage: heroLifestyleImg,
+  alt: '아침 자연광이 드는 공간에서 딥네이비 니트와 아이보리 팬츠를 입고 차를 마시며 쉬고 있는 모습 (시연용 이미지)',
+};
+
+export const HERO_MEDIA = INITIAL_HERO;
+
+export const INITIAL_ABOUT: AboutContent = {
+  headline: '오래도록 나다운 선택, Leaf.',
+  intro:
+    'Leaf.는 옷을 판매하는 것으로 끝나지 않습니다. 충분히 알고 선택한 옷을 오래 입고, 돌보고, 때로는 다시 순환시키며, 그 사이에 자신의 취향과 삶을 돌아보고 서로의 이야기를 나누는 브랜드 플랫폼입니다.',
+  homeClosingHeadline:
+    '충분히 알고 선택한 한 벌이 오래도록 내 곁에 머무르기를 바랍니다.',
+  values: [
+    {
+      code: 'CHOOSE',
+      title: '충분히 알고 선택하기',
+      body: '원사, 공방, 착용감과 관리법까지 숨김없이 나누어 납득할 수 있는 선택을 돕습니다.',
+    },
+    {
+      code: 'CARE',
+      title: '오래 돌보고 사용하기',
+      body: '판매가 끝난 뒤에도 제작 과정, 세탁 팁, 수선 이야기를 계속 공유합니다.',
+    },
+    {
+      code: 'REFLECT',
+      title: '스스로를 알아가기',
+      body: '일상의 속도를 잠시 늦추고 나의 취향과 마음을 돌아보는 질문을 전합니다.',
+    },
+    {
+      code: 'CONNECT',
+      title: '경험과 관계 나누기',
+      body: '옷을 입는 사람들끼리 관리 경험과 소소한 일상의 이야기를 나눕니다.',
+    },
+  ],
+};
+
+export const PRODUCTS: Product[] = [
+  {
+    id: 'prod-knit-004',
+    slug: 'merino-everyday-crewneck',
+    name: '메리노 에브리데이 크루넥 니트',
+    englishSubtitle: 'Merino Everyday Crewneck Knit',
+    category: 'KNIT',
+    pieceNumber: 'Piece.004',
+    summary: '피부에 닿는 감촉을 먼저 생각한 12게이지 엑스트라파인 메리노 울 니트. 계절을 건너며 오래 입는 기본의 균형을 담았습니다.',
+    description:
+      '매일 손이 가는 니트는 유행보다 어깨선과 목선의 여유, 그리고 세탁 후에도 무너지지 않는 조직감에서 결정됩니다. 100% 호주산 엑스트라파인 메리노 울 원사를 2합으로 편직해 가벼우면서도 밀도 있는 보온감을 제공합니다.',
+    material: '울 100% (엑스트라파인 메리노 19.5마이크론)',
+    origin: '원사 방적: 이탈리아 / 편직·봉제: 대한민국 서울 성수 니트 공방',
+    fitInfo: '여유 있는 레귤러 핏 · 모델(166cm) M 착용 시 힙 반 정도 덮는 기장',
+    careGuide: [
+      '착용 후 통풍이 잘되는 그늘에서 하루 정도 습기를 날려 주세요.',
+      '세탁 시 30℃ 이하 미온수에 울 전용 중성세제로 가볍게 단독 손세탁하거나 드라이클리닝을 권장합니다.',
+      '건조기 사용을 피하고, 수건을 깔아 뉘어서 그늘에 자연 건조해 주세요.',
+      '장기 보관 시 옷걸이 대신 넉넉히 접어 통기성 있는 패브릭 파우치에 보관하세요.',
+    ],
+    policyNote:
+      '선주문 특성상 주문 마감 후 원사 발주 및 편직이 시작됩니다. 단순 변심에 의한 교환·환불은 네이버 스마트스토어 판매 페이지의 청약철회 기준을 따릅니다.',
+    images: [
+      { src: knitImg, alt: '딥네이비와 올리브 세이지 컬러로 접혀 있는 메리노 니트 스웨터 (시연용 이미지)' },
+      { src: heroLifestyleImg, alt: '일상 공간에서 딥네이비 메리노 니트를 착용한 모습 (시연용 이미지)' },
+      { src: atelierImg, alt: '서울 니트 공방에서 딥네이비 원사와 편직 시편을 검수하는 손 (시연용 이미지)' },
+    ],
+    variants: [
+      { id: 'v-k-navy-s', color: '딥네이비', size: 'S (44-55)', active: true },
+      { id: 'v-k-navy-m', color: '딥네이비', size: 'M (55-66)', active: true },
+      { id: 'v-k-olive-s', color: '올리브 세이지', size: 'S (44-55)', active: true },
+      { id: 'v-k-olive-m', color: '올리브 세이지', size: 'M (55-66)', active: true },
+    ],
+    rounds: [
+      {
+        id: 'round-knit-2',
+        title: '2차 선주문 회차',
+        opensAt: '2026.11.10 11:00 KST',
+        closesAt: '2026.11.24 23:59 KST',
+        expectedShipWindow: '2026.12.14 — 12.18 순차 출고 예정',
+        price: 218000,
+        originalPrice: 238000,
+        shippingFee: '무료배송 (선주문 혜택)',
+        sellingStatus: 'OPEN',
+        productionStatus: 'YARN_SOURCING',
+        externalStoreUrl: null,
+        storeNote: '시연 환경에서는 실제 스마트스토어 URL이 연결되어 있지 않습니다.',
+      },
+      {
+        id: 'round-knit-1',
+        title: '1차 선주문 회차',
+        opensAt: '2026.09.18 11:00 KST',
+        closesAt: '2026.09.28 23:59 KST',
+        expectedShipWindow: '2026.10.21 전량 출고 완료',
+        price: 208000,
+        shippingFee: '3,000원',
+        sellingStatus: 'CLOSED',
+        productionStatus: 'COMPLETED',
+        externalStoreUrl: null,
+        storeNote: '1차 회차 판매가 종료되었습니다.',
+      },
+    ],
+    productionUpdates: [
+      {
+        id: 'upd-knit-2',
+        roundTitle: '2차 선주문 회차',
+        stage: '원사 확인 및 편직 준비',
+        title: '2차분 딥네이비 · 올리브 세이지 원사 로트 입고 확인',
+        body: '이탈리아 방적소에서 출고된 동일 번수 원사 로트의 색상 편차와 수축률 테스트를 마쳤습니다. 2차 주문 마감 직후 12게이지 홀가먼트 편직기에 순차 투입될 예정입니다.',
+        confirmedAt: '2026.11.13 확인',
+        image: atelierImg,
+      },
+      {
+        id: 'upd-knit-1',
+        roundTitle: '1차 선주문 회차',
+        stage: '검수 및 출고 완료',
+        title: '1차 선주문 전량 세탁·스팀 공정 후 발송 완료',
+        body: '수령 후 바로 착용하실 수 있도록 공방 1차 워싱과 스팀 다림질을 거쳐 모든 1차 주문 건을 발송했습니다.',
+        confirmedAt: '2026.10.21 확인',
+      },
+    ],
+    allowReorderInterest: false,
+    relatedJournalSlug: 'how-we-test-yarn-longevity',
+  },
+  {
+    id: 'prod-robe-001',
+    slug: 'oatmeal-linen-wool-robe',
+    name: '오트밀 린넨울 아틀리에 로브',
+    englishSubtitle: 'Oatmeal Linen-Wool Atelier Robe',
+    category: 'ROBE',
+    pieceNumber: 'Piece.001',
+    summary: '집 안에서의 고요한 아침부터 가까운 산책길까지 자연스럽게 이어지는 리프의 첫 번째 시그니처 로브 코트.',
+    description:
+      '벨트를 조이면 단정한 코트처럼, 풀면 가벼운 가운처럼 흐르는 실루엣을 목표로 삼았습니다. 벨기에산 아미앙 린넨의 힘 있는 직조감과 메리노 울의 부드러운 온기가 섞여 사계절 중 가장 긴 시간 곁에 둘 수 있는 한 벌입니다.',
+    material: '린넨 62% · 버진 울 38%',
+    origin: '원단: 국내 직조(대구) / 패턴·봉제: 서울 한남 아틀리에',
+    fitInfo: '드롭 숄더 릴렉스 핏 · 키와 체형에 구애받지 않는 2가지 기장 옵션',
+    careGuide: [
+      '천연 린넨과 울 혼방 특성상 드라이클리닝을 권장합니다.',
+      '생활 주름은 가벼운 스팀만으로도 자연스럽게 펴집니다.',
+      '벨트 고리와 소매 단의 마모가 느껴질 경우 Leaf. 수선 문의를 통해 보수 안내를 받으실 수 있습니다.',
+    ],
+    policyNote:
+      '1차 선주문 접수가 마감되어 현재 제작이 진행 중입니다. 다음 회차 오픈 여부는 제작 완료 및 원단 재수급 확인 후 공지됩니다.',
+    images: [
+      { src: robeImg, alt: '나무 옷걸이에 걸려 있는 오트밀 린넨울 아틀리에 로브 (시연용 이미지)' },
+      { src: atelierImg, alt: '아틀리에 작업대 위 원단 및 게이지 샘플 (시연용 이미지)' },
+    ],
+    variants: [
+      { id: 'v-r-oat-short', color: '오트밀 린넨', size: 'Regular (기장 108cm)', active: true },
+      { id: 'v-r-oat-long', color: '오트밀 린넨', size: 'Long (기장 116cm)', active: true },
+    ],
+    rounds: [
+      {
+        id: 'round-robe-1',
+        title: '1차 선주문 회차',
+        opensAt: '2026.10.05 11:00 KST',
+        closesAt: '2026.10.19 23:59 KST',
+        expectedShipWindow: '2026.11.25 — 11.29 출고 예정',
+        price: 345000,
+        shippingFee: '무료배송',
+        sellingStatus: 'CLOSED',
+        productionStatus: 'KNITTING',
+        externalStoreUrl: null,
+        storeNote: '판매가 마감되어 현재 아틀리에에서 봉제 및 마감 공정이 진행 중입니다.',
+      },
+    ],
+    productionUpdates: [
+      {
+        id: 'upd-robe-2',
+        roundTitle: '1차 선주문 회차',
+        stage: '본봉제 및 안감 파이핑 공정',
+        title: '안단 바이어스 파이핑 마감 작업 진행 중',
+        body: '안감이 없는 한 겹 로브 특성상 안쪽 시접이 피부에 닿아도 거칠지 않도록 얇은 코튼 바이어스로 전 부위를 감싸고 있습니다. 예정 출고일(11.25)에 맞추어 순조롭게 진행 중입니다.',
+        confirmedAt: '2026.11.12 확인',
+      },
+      {
+        id: 'upd-robe-1',
+        roundTitle: '1차 선주문 회차',
+        stage: '원단 재단 및 선축 가공',
+        title: '선주문 수량 확정 및 원단 워싱 재단 완료',
+        body: '세탁 시 수축을 최소화하기 위해 재단 전 원단 전체 스팀 선축 과정을 완료했습니다.',
+        confirmedAt: '2026.10.26 확인',
+      },
+    ],
+    allowReorderInterest: true,
+    relatedJournalSlug: 'first-piece-oatmeal-robe',
+  },
+  {
+    id: 'prod-tee-001',
+    slug: 'heavy-organic-tee',
+    name: '헤비 오가닉 코튼 에브리데이 티',
+    englishSubtitle: 'Heavy Organic Cotton Everyday Tee',
+    category: 'TEE',
+    summary: '비침 없이 단정하게 떨어지는 16수 탄탄한 유기농 면 티셔츠. 로브나 니트 아래에 받쳐 입기 좋은 기본 한 장.',
+    description:
+      '속옷 비침이나 목 늘어짐 걱정 없이 단품으로도, 레이어드로도 오래 입을 수 있도록 고밀도 16수 오가닉 코튼을 선택했습니다. 넥라인 립(Rib)의 폭과 복원력을 세 번의 샘플링을 거쳐 다듬었습니다.',
+    material: '오가닉 코튼 100% (GOTS 인증 원사)',
+    origin: '원단 편직: 경기도 포천 / 봉제: 대한민국 서울',
+    fitInfo: '적당히 여유 있는 스탠다드 핏 · S / M 두 가지 사이즈',
+    careGuide: [
+      '찬물 중성세제 세탁을 권장하며, 형태 보존을 위해 세탁망 사용을 추천합니다.',
+      '목선 늘어짐을 막기 위해 젖은 상태에서는 옷걸이 대신 건조대에 뉘어 말려 주세요.',
+    ],
+    policyNote: '현재 상시 소량 선주문 회차가 열려 있습니다. 상세 구매 및 배송 조회는 네이버 스마트스토어 기준을 따릅니다.',
+    images: [
+      { src: teeBottomsImg, alt: '나무 테이블 위에 가지런히 놓인 웜아이보리 헤비 오가닉 티셔츠와 올리브 린넨 팬츠 (시연용 이미지)' },
+    ],
+    variants: [
+      { id: 'v-t-ivory-s', color: '웜 아이보리', size: 'S', active: true },
+      { id: 'v-t-ivory-m', color: '웜 아이보리', size: 'M', active: true },
+    ],
+    rounds: [
+      {
+        id: 'round-tee-1',
+        title: '2026 가을·겨울 회차',
+        opensAt: '2026.11.01 11:00 KST',
+        closesAt: '2026.11.30 23:59 KST',
+        expectedShipWindow: '2026.12.08 — 12.11 순차 출고 예정',
+        price: 78000,
+        shippingFee: '3,000원 (15만원 이상 무료)',
+        sellingStatus: 'OPEN',
+        productionStatus: 'PLANNING',
+        externalStoreUrl: null,
+        storeNote: '시연 환경에서는 실제 스마트스토어 URL이 연결되어 있지 않습니다.',
+      },
+    ],
+    productionUpdates: [
+      {
+        id: 'upd-tee-1',
+        roundTitle: '2026 가을·겨울 회차',
+        stage: '원단 준비 완료',
+        title: '무형광 웜 아이보리 생지 원단 확보 완료',
+        body: '표백제를 사용하지 않아 원면 특유의 미세한 목화씨 점이 살아 있는 내추럴 컬러 원단입니다.',
+        confirmedAt: '2026.11.05 확인',
+      },
+    ],
+    allowReorderInterest: false,
+  },
+  {
+    id: 'prod-bottoms-003',
+    slug: 'olive-stone-linen-trousers',
+    name: '올리브 스톤 릴렉스드 린넨 트라우저',
+    englishSubtitle: 'Olive Stone Relaxed Linen Trousers',
+    category: 'BOTTOMS',
+    pieceNumber: 'Piece.003',
+    summary: '허리의 긴장감을 덜어내고 걸음에 여유를 더하는 와이드 스트레이트 팬츠. 차분한 올리브 스톤 염색이 특징입니다.',
+    description:
+      '하루 종일 앉아 일하거나 오래 걸을 때도 복부를 압박하지 않도록 뒷밴딩과 안쪽 코튼 스트링을 조합했습니다. 앞면에는 얕은 원턱을 넣어 단정한 슬랙스처럼 보이면서도 편안한 착용감을 유지합니다.',
+    material: '헤비 린넨 100% (바이오 워싱 가공)',
+    origin: '대한민국 서울',
+    fitInfo: '허리 뒷밴딩 · 릴렉스드 와이드 실루엣',
+    careGuide: [
+      '단독 찬물 손세탁 또는 울 코스로 세탁 후 자연 건조해 주세요.',
+      '입을수록 체형에 맞게 길들여지는 자연스러운 구김을 즐겨 주세요.',
+    ],
+    policyNote: '다가오는 다음 선주문 회차를 준비 중입니다. 정확한 일정과 가격은 오픈 시점에 확정 안내됩니다.',
+    images: [
+      { src: teeBottomsImg, alt: '올리브 스톤 컬러의 릴렉스드 린넨 트라우저와 오가닉 티셔츠 (시연용 이미지)' },
+    ],
+    variants: [
+      { id: 'v-b-olive-s', color: '올리브 스톤', size: 'S (25-27)', active: true },
+      { id: 'v-b-olive-m', color: '올리브 스톤', size: 'M (28-30)', active: true },
+    ],
+    rounds: [
+      {
+        id: 'round-bottoms-2',
+        title: '2차 선주문 예정 회차',
+        opensAt: '2026.12.02 11:00 KST 예정',
+        closesAt: '2026.12.16 23:59 KST 예정',
+        expectedShipWindow: '2027.01 초 출고 예정',
+        price: 168000,
+        shippingFee: '무료배송 예정',
+        sellingStatus: 'COMING_SOON',
+        productionStatus: 'PLANNING',
+        externalStoreUrl: null,
+        storeNote: '오픈 전 단계로, 현재는 상품 정보 및 소재 미리보기만 제공됩니다.',
+      },
+    ],
+    productionUpdates: [
+      {
+        id: 'upd-bottoms-1',
+        roundTitle: '2차 선주문 예정 회차',
+        stage: '샘플 피팅 보완',
+        title: '주머니 처짐 보완을 위한 안감 원단 보강 테스트',
+        body: '얇은 소지품을 넣어도 주머니 라인이 무너지지 않도록 포켓 백 원단을 40수 고밀도 트윌 면으로 변경 테스트 중입니다.',
+        confirmedAt: '2026.11.09 확인',
+      },
+    ],
+    allowReorderInterest: false,
+  },
+];
+
+export const ARCHIVE_ENTRIES: ArchiveEntry[] = [
+  {
+    pieceNumber: 'Piece.001',
+    title: 'Oatmeal Linen-Wool Atelier Robe',
+    season: '2026 Autumn Edition',
+    intent: '실내의 휴식과 바깥의 산책 사이, 경계 없이 걸칠 수 있는 첫 번째 아우터',
+    story:
+      '리프를 시작하며 가장 먼저 만들고 싶었던 옷은 몸을 조이지 않는 외투였습니다. 집에서 책을 읽거나 차를 마실 때의 고요한 태도를 그대로 밖으로 가져갈 수 있도록, 코트의 단정함과 로브의 유연함을 한 패턴 안에 담았습니다.',
+    materialSummary: '린넨 62% · 버진 울 38% (국내 직조, 선축 워싱)',
+    image: robeImg,
+    imageAlt: 'Piece.001 오트밀 린넨울 아틀리에 로브 기록 사진 (시연용 이미지)',
+    relatedProductSlug: 'oatmeal-linen-wool-robe',
+  },
+  {
+    pieceNumber: 'Piece.002',
+    title: 'Raw Wool Atelier Shawl Cardigan',
+    season: '2026 Early Autumn Study',
+    intent: '염색을 최소화한 양모 본연의 색감으로 짠 두꺼운 어깨 숄 카디건',
+    story:
+      '소량 아카이브 스터디로 제작했던 Piece.002는 원사 특유의 보풀과 무게감을 기록으로 남겼습니다. 추후 원사 수급 안정성과 착용 피드백을 반영해 개선판 선주문 여부를 검토할 예정입니다.',
+    materialSummary: '무염색 셰틀랜드 울 100%',
+    image: atelierImg,
+    imageAlt: 'Piece.002 무염색 울 원사와 편직 기록 사진 (시연용 이미지)',
+  },
+  {
+    pieceNumber: 'Piece.003',
+    title: 'Olive Stone Relaxed Linen Trousers',
+    season: '2026 Winter Pre-Study',
+    intent: '계절을 가리지 않는 묵직한 헤비 린넨과 자연물에서 얻은 올리브 스톤 컬러',
+    story:
+      '여름 소재로만 여겨지던 린넨을 굵은 번수로 직조해 겨울 니트와도 어우러지는 하의로 풀어냈습니다. 바이오 워싱을 두 차례 거쳐 처음 입는 날부터 오래 길들여진 듯한 부드러움을 냅니다.',
+    materialSummary: '헤비 린넨 100% (바이오 워싱)',
+    image: teeBottomsImg,
+    imageAlt: 'Piece.003 올리브 스톤 린넨 트라우저 기록 사진 (시연용 이미지)',
+    relatedProductSlug: 'olive-stone-linen-trousers',
+  },
+  {
+    pieceNumber: 'Piece.004',
+    title: 'Merino Everyday Crewneck Knit',
+    season: '2026 Winter Edition',
+    intent: '매일의 호흡처럼 몸에 자연스럽게 감기는 12게이지 홀가먼트 크루넥',
+    story:
+      '시접이 없는 홀가먼트 편직 방식은 어깨와 겨드랑이의 쓸림을 줄여 줄 뿐 아니라, 원사 낭비를 최소화합니다. 1차 선주문 고객들의 목둘레 피드백을 반영해 2차 회차에서는 립 조직의 탄성을 8% 높였습니다.',
+    materialSummary: '엑스트라파인 메리노 울 100%',
+    image: knitImg,
+    imageAlt: 'Piece.004 메리노 에브리데이 크루넥 니트 기록 사진 (시연용 이미지)',
+    relatedProductSlug: 'merino-everyday-crewneck',
+  },
+];
+
+export const JOURNAL_POSTS: JournalPost[] = [
+  {
+    id: 'jour-1',
+    slug: 'how-we-test-yarn-longevity',
+    kind: 'MAKING',
+    title: '좋은 니트는 첫날의 촉감보다 세 번째 겨울의 모습으로 기억됩니다',
+    subtitle: '메리노 에브리데이 크루넥(Piece.004) 원사 선정과 12게이지 테스트 노트',
+    publishedAt: '2026.11.08',
+    readTime: '4분 읽기',
+    coverImage: atelierImg,
+    coverAlt: '니트 공방에서 딥네이비 원사와 편직 시편을 검수하는 모습 (시연용 이미지)',
+    excerpt:
+      '선주문을 열기 전, 우리가 가장 오래 머무는 자리는 성수동의 작은 편직 공방입니다. 보풀이 덜 일어나면서도 피부에 거슬리지 않는 실의 꼬임과 게이지를 찾아낸 과정을 나눕니다.',
+    paragraphs: [
+      '매장에서 처음 손으로 만졌을 때 지나치게 매끄럽고 솜털처럼 부풀어 오른 니트는, 의외로 열 번 남짓 입고 나면 마찰 부위에 쉽게 뭉침이 생기곤 합니다. Leaf.가 첫 겨울 니트를 기획하며 가장 먼저 내려놓은 기준은 ‘첫눈에 부드러운 과장’이었습니다.',
+      '성수동 공방의 김 선생과 함께 7가지 메리노 원사를 같은 게이지로 짜서 실제로 두 달 동안 번갈아 입고 세탁해 보았습니다. 최종적으로 선택한 것은 이탈리아 방적소의 19.5마이크론 엑스트라파인 메리노 2합 원사입니다. 1합보다 꼬임이 탄탄해 조직 사이의 공간이 쉽게 무너지지 않으면서도, 목에 닿는 촉감은 차분하고 맑습니다.',
+      '선주문 방식을 택한 이유도 여기에 있습니다. 필요한 만큼의 원사를 한 번에 발주해 과잉 재고를 남기지 않고, 대신 한 벌 한 벌 편직 후의 워싱과 스팀 공정에 충분한 시간을 쓰기 위해서입니다. 여러분의 옷장에서 세 번째, 다섯 번째 겨울을 함께 건너는 옷이 되기를 바랍니다.',
+    ],
+    pullQuote: '필요한 만큼만 짓고, 오래 돌보며 입는 경험까지가 한 벌의 완성이라고 믿습니다.',
+    relatedProductSlug: 'merino-everyday-crewneck',
+  },
+  {
+    id: 'jour-2',
+    slug: 'first-piece-oatmeal-robe',
+    kind: 'BRAND',
+    title: '집과 바깥의 속도를 하나로 잇는 옷, 오트밀 로브를 지으며',
+    subtitle: 'Leaf.가 말하는 ‘오래도록 나다운 선택’의 출발점',
+    publishedAt: '2026.10.12',
+    readTime: '5분 읽기',
+    coverImage: robeImg,
+    coverAlt: '나무 옷걸이에 걸린 오트밀 린넨울 아틀리에 로브 (시연용 이미지)',
+    excerpt:
+      '바쁜 일정 속에서 집으로 돌아와 옷을 갈아입는 순간뿐 아니라, 집 앞 공원을 걷고 조용한 서점에 들르는 시간까지 나의 리듬을 지켜주는 옷을 상상했습니다.',
+    paragraphs: [
+      '서른을 넘기고 마흔에 가까워질수록 옷장 앞에 서는 마음은 조금씩 달라집니다. 화려하게 시선을 끄는 한 벌보다, 오늘 나의 기분과 체온을 조용히 받아주는 옷이 더 귀해집니다.',
+      'Piece.001 오트밀 린넨울 로브는 그 질문에서 태어났습니다. 안감을 덧대어 각을 세우는 대신, 린넨과 버진 울이 62:38 비율로 섞인 원단 한 겹의 탄력을 믿고 안쪽 시접을 얇은 면 바이어스로 하나씩 감쌌습니다.',
+      '옷은 결국 내가 하루를 어떻게 건너가고 싶은지에 대한 작은 선언이기도 합니다. Leaf.의 모든 옷이 당신의 일상에서 조급함을 덜어내는 작은 여백이 되기를 바랍니다.',
+    ],
+    relatedProductSlug: 'oatmeal-linen-wool-robe',
+  },
+  {
+    id: 'jour-3',
+    slug: 'morning-rhythm-conversation',
+    kind: 'PEOPLE',
+    title: '“옷을 고르는 기준이 단순해지자, 하루의 첫 시간도 달라졌어요”',
+    subtitle: '편집자 이서연 님과의 대화 — 물건과 취향을 대하는 태도에 대하여',
+    publishedAt: '2026.10.29',
+    readTime: '4분 읽기',
+    coverImage: heroLifestyleImg,
+    coverAlt: '아침 햇살이 드는 창가에서 딥네이비 니트를 입고 차를 마시는 모습 (시연용 이미지)',
+    excerpt:
+      '10년째 독립 출판물을 만들고 있는 서연 님의 옷장에는 계절마다 꺼내 입는 옷이 열 벌 남짓뿐입니다. 적게 갖고 오래 입는 삶이 준 여유에 대해 들었습니다.',
+    paragraphs: [
+      '“예전에는 계절이 바뀔 때마다 쇼핑몰을 훑어보며 새로운 조합을 찾는 게 휴식인 줄 알았어요. 그런데 어느 날 아침, 가득 찬 옷장 앞에서 입을 옷이 없다며 지각할 뻔한 뒤로 기준을 바꿨습니다.”',
+      '서연 님은 지금 자신의 피부 톤과 생활 동선에 맞는 세 가지 색—아이보리, 딥네이비, 올리브—안에서만 옷을 고릅니다. 선택지가 줄어들자 아침 시간의 피로가 사라졌고, 대신 원단의 촉감이나 세탁 후의 변화를 세심하게 살피는 즐거움이 생겼다고 합니다.',
+      'Leaf.는 옷을 많이 소유하는 기쁨 대신, 이미 가진 옷과 새로 들인 한 벌이 조화롭게 오래 머무는 일상을 응원합니다.',
+    ],
+    relatedProductSlug: 'merino-everyday-crewneck',
+  },
+];
+
+export const MINDSET_POSTS: MindsetPost[] = [
+  {
+    id: 'mind-1',
+    slug: 'what-feels-like-mine-lately',
+    kind: 'QUESTION',
+    title: '요즘 내 하루에서 ‘가장 나답다’고 느낀 순간은 언제였나요?',
+    publishedAt: '2026.11.12',
+    summary: '누군가의 기준이나 속도를 잠시 내려놓고, 오직 내 호흡대로 움직였던 짧은 장면을 떠올려 봅니다.',
+    essay: [
+      '하루의 대부분은 해야 할 일과 타인의 기대에 응답하는 시간으로 채워지곤 합니다. 그래서인지 문득 ‘나는 요즘 무엇을 좋아하고 있을까’라는 질문이 낯설게 느껴질 때가 있습니다.',
+      '거창한 변화가 아니어도 좋습니다. 아침에 컵을 고르는 손길, 퇴근길에 한 정거장 일찍 내려 걸었던 바람, 혹은 오래된 니트의 보풀을 천천히 정리하던 10분. 그 작은 순간들 안에 이미 나만의 기준이 선명하게 살아 있습니다.',
+      '이 질문은 어딘가에 제출하거나 기록으로 남기기 위한 숙제가 아닙니다. 원한다면 아래 질문을 복사해 개인 메모장이나 종이 노트에 옮겨 두고, 오늘 밤 잠깐 생각해 보세요.',
+    ],
+    questions: [
+      '최근 일주일 동안 가장 마음이 편안했던 장소와 그곳에서 내가 하고 있던 일은 무엇인가요?',
+      '최근에 내린 선택 중, 남의 시선보다 내 기분과 필요를 먼저 고려했던 결정이 있다면 무엇인가요?',
+      '내 옷장 속에서 손이 가장 자주 가는 옷 한 벌은 어떤 이유로 나와 잘 맞나요?',
+    ],
+    practiceTip: '오늘 저녁, 핸드폰을 다른 방에 두고 따뜻한 차 한 잔을 마시는 15분 동안만 창밖이나 방 안의 빛을 바라보며 호흡을 정리해 보세요.',
+  },
+  {
+    id: 'mind-2',
+    slug: 'keep-or-let-go-wardrobe-note',
+    kind: 'SMALL_PRACTICE',
+    title: '옷장 앞에서 나에게 건네는 세 가지 작은 질문',
+    publishedAt: '2026.11.01',
+    summary: '새 옷을 들이기 전, 이미 곁에 있는 옷들을 천천히 다시 바라보는 20분의 실천.',
+    essay: [
+      '옷을 정리하는 일은 물건을 버리는 작업이기보다, 지금의 나를 다시 파악하는 과정에 가깝습니다. 한때 좋아했지만 지금은 손이 가지 않는 옷에는 과거의 내 취향과 계절이 고스란히 담겨 있기 때문입니다.',
+      '주말 오전, 서두르지 않고 옷장의 한 칸만 열어 세 가지 질문을 천천히 건네 보세요.',
+    ],
+    questions: [
+      '이 옷을 입었을 때 내 몸은 숨을 편하게 쉬고 있나요, 아니면 어딘가 불편하게 긴장하고 있나요?',
+      '작은 수선이나 세탁만으로 다시 곁에 둘 수 있는 옷은 무엇인가요?',
+      '지금의 나를 가장 잘 설명해 주는 색과 촉감은 무엇인가요?',
+    ],
+    practiceTip: '이번 주말 20분 동안, 자주 입지 않는 니트 한 벌의 보풀을 정리하고 세탁 라벨을 다시 읽어 보세요.',
+  },
+  {
+    id: 'mind-3',
+    slug: 'slow-choice-essay',
+    kind: 'NOTE',
+    title: '충분히 알고 고르는 마음은 결국 나를 아끼는 연습입니다',
+    publishedAt: '2026.10.20',
+    summary: '빠른 결정과 즉각적인 소비 사이에서 잠시 멈춰 서는 이유에 대한 짧은 에세이.',
+    essay: [
+      '우리는 매일 수많은 선택지 앞에서 ‘지금 바로 결정하라’는 신호를 받습니다. 하지만 어떤 옷이나 물건이 정말 내 생활에 어울리는지 알기 위해서는 사실 하루나 이틀쯤의 고요한 틈이 필요합니다.',
+      '원단을 보고, 관리 방법을 읽고, 내 옷장의 다른 옷들과 나란히 떠올려 보는 시간. Leaf.가 선주문 기간을 넉넉히 두고 제작 기록을 세세히 공유하는 이유는, 고객이 망설임 없이 사는 것이 아니라 충분히 납득하고 기분 좋게 기다릴 수 있도록 돕기 위함입니다.',
+    ],
+    questions: [
+      '지금 내가 고민하고 있는 선택 앞에서, 하루만 더 여유를 둔다면 어떤 점이 달라 보일까요?',
+    ],
+  },
+];
+
+export const INITIAL_CIRCLE_POSTS: CirclePost[] = [
+  {
+    id: 'circle-1',
+    authorNickname: '수아의옷장',
+    authorId: 'member-sua',
+    authorType: 'MEMBER',
+    category: 'MY_WARDROBE',
+    title: '5년 된 딥네이비 니트와 올리브 팬츠를 번갈아 입는 요즘',
+    body: '예전엔 매 시즌 새 옷을 들이는 게 즐거웠는데, 서른 중반을 지나면서는 이미 잘 길든 니트 두어 벌을 돌아가며 입는 안정감이 훨씬 좋더라고요. 아침마다 거울 앞에서 고민하는 시간이 줄어드니 출근길 마음도 한결 가볍습니다. 이번 2차 메리노 니트 제작 노트를 읽고 세탁 후 건조대 활용법도 다시 챙겨 보고 있어요.',
+    status: 'APPROVED',
+    relatedProductSlug: 'merino-everyday-crewneck',
+    image: knitImg,
+    imageAlt: '차분하게 개켜 둔 딥네이비와 올리브 니트 (시연용 이미지)',
+    createdAt: '2026.11.11',
+  },
+  {
+    id: 'circle-2',
+    authorNickname: '정원산책',
+    authorId: 'member-jungwon',
+    authorType: 'MEMBER',
+    category: 'CARE_REPAIR',
+    title: '울 니트 소매 끝 미세한 올 풀림, 코바늘로 집에서 정리한 후기',
+    body: '가방 고리에 걸려 울 니트 소매 쪽 실 한 올이 살짝 올라왔을 때 자르지 않고 얇은 코바늘로 안쪽으로 당겨 넣어 정리해 보았습니다. 혹시 비슷한 경험 있으신 분들을 위해, 제가 참고한 공방 수선 팁 공유해요. 자르면 구멍이 커질 수 있으니 꼭 안쪽으로 빼서 매듭만 가볍게 정리하시는 게 안전하더라고요.',
+    status: 'APPROVED',
+    relatedProductSlug: 'merino-everyday-crewneck',
+    image: atelierImg,
+    imageAlt: '니트 스와치와 코바늘 도구 (시연용 이미지)',
+    createdAt: '2026.11.07',
+  },
+  {
+    id: 'circle-3',
+    authorNickname: 'Leaf.',
+    authorId: 'brand-leaf',
+    authorType: 'BRAND',
+    category: 'LEAF_ASKS',
+    title: '[Leaf.의 질문] 계절이 바뀔 때 가장 먼저 꺼내 입는 ‘마음이 놓이는 옷’은 무엇인가요?',
+    body: '날씨가 부쩍 서늘해진 11월입니다. 여러분의 옷장 속에서 해마다 이맘때면 가장 먼저 손이 가고, 입는 순간 ‘이제 진짜 이 계절이 왔구나’ 싶으면서도 마음이 차분해지는 옷 한 벌이 있다면 어떤 옷인지 댓글이나 새 글로 들려주세요.',
+    status: 'APPROVED',
+    createdAt: '2026.11.03',
+  },
+  {
+    id: 'circle-4',
+    authorNickname: '고요한오후',
+    authorId: 'member-goyo',
+    authorType: 'MEMBER',
+    category: 'REFLECTION',
+    title: '아침 차 한 잔과 함께 읽은 마인드셋 질문, 내 속도를 돌아보며',
+    body: 'MINDSET 페이지의 ‘요즘 가장 나답다고 느낀 순간’이라는 질문을 노트에 옮겨 적어 보았습니다. 바쁜 업무 메일들을 열기 전 15분 동안 창밖 나무 흔들리는 걸 보며 차를 마시던 시간이 떠올랐어요. 거창한 취미가 없어도 하루에 15분 내 호흡을 챙기는 것만으로도 마음이 훨씬 단단해지네요.',
+    status: 'APPROVED',
+    image: experienceAromaImg,
+    imageAlt: '따뜻한 차와 린넨 노트가 놓인 나무 테이블 (시연용 이미지)',
+    createdAt: '2026.10.28',
+  },
+];
+
+export const INITIAL_CIRCLE_COMMENTS: CircleComment[] = [
+  {
+    id: 'cmt-1',
+    postId: 'circle-1',
+    authorNickname: 'Leaf.',
+    isBrandOfficial: true,
+    body: '아침 시간이 한결 가벼워지셨다는 이야기가 참 반갑습니다. 이미 가진 옷들과 자연스럽게 어우러지는 한 벌이 될 수 있도록 2차 제작도 꼼꼼히 살피겠습니다.',
+    createdAt: '2026.11.11',
+  },
+  {
+    id: 'cmt-2',
+    postId: 'circle-2',
+    authorNickname: '연희동미싱',
+    body: '맞아요! 절대 가위로 자르면 안 되고 코바늘로 안쪽으로 쏙 넣어야 하더라고요. 좋은 팁 감사합니다.',
+    createdAt: '2026.11.08',
+  },
+  {
+    id: 'cmt-3',
+    postId: 'circle-3',
+    authorNickname: '서연',
+    body: '저는 4년 전 구입한 얇은 오트밀 울 가디건이요. 구멍 난 곳을 작게 짜깁기해서 아직도 매년 첫추위에 꺼내 입습니다.',
+    createdAt: '2026.11.04',
+  },
+];
+
+export const EXPERIENCE_PROGRAMS: ExperienceProgram[] = [
+  {
+    id: 'exp-1',
+    slug: 'morning-aroma-self-care',
+    type: 'AROMA_SELF_CARE',
+    mode: 'OFFLINE',
+    status: 'OPEN',
+    title: '겨울의 문턱, 나와 만나는 아로마 셀프케어 티타임',
+    summary: '천연 에센셜 오일의 향을 천천히 맡으며 호흡을 고르고, 나만의 작은 겨울 블렌딩 롤온을 만드는 소규모 모임.',
+    description: [
+      '바쁘게 지나가는 연말 앞에서 잠시 숨을 고르는 90분의 오프라인 시간입니다. 인위적인 향료가 아닌 우디·시트러스 계열 천연 에센셜 오일 8종을 시향하며 오늘 나의 컨디션에 맞는 향을 찾습니다.',
+      '티 소믈리에가 우려낸 따뜻한 허브티와 함께 짧은 자기성찰 카드를 나누고, 직접 조향한 10ml 아로마 롤온을 가져가실 수 있습니다.',
+    ],
+    targetAudience: '복잡한 생각에서 벗어나 조용한 감각의 휴식을 경험하고 싶은 분 (성인 누구나)',
+    scheduleKst: '2026.11.28 (토) 오전 10:30 — 12:00 KST',
+    locationText: '서울 용산구 한남동 Leaf. 작은 서재 (예약 확정 후 상세 주소 안내)',
+    hostName: '강민지 (아로마테라피스트 · Leaf. 프로그램 디렉터)',
+    capacityText: '소규모 정원 8명 (수동 상태 관리)',
+    priceText: '45,000원 (다과 및 10ml 롤온 재료비 포함)',
+    preparations: '편안한 복장 외 별도 준비물 없음',
+    deadlineText: '2026.11.26 (목) 18:00 KST까지',
+    refundPolicy: '예약 및 결제·환불은 네이버 예약 플랫폼의 클래스 환불 규정을 따릅니다 (모임 3일 전까지 전액 환불).',
+    bookingProvider: '네이버 예약',
+    externalBookingUrl: null,
+    image: experienceAromaImg,
+    imageAlt: '아로마 오일 병과 따뜻한 차, 린넨 노트가 놓인 테이블 (시연용 이미지)',
+  },
+  {
+    id: 'exp-2',
+    slug: 'wardrobe-mindset-online-session',
+    type: 'MINDSET_SESSION',
+    mode: 'ONLINE',
+    status: 'UPCOMING',
+    title: '온라인 마인드셋 세션: 옷장과 마음의 여백 정리하기',
+    summary: '각자의 집에서 따뜻한 차를 곁에 두고 참여하는 60분 비대면 성찰 워크숍.',
+    description: [
+      '화면 너머로 서로의 이야기를 강요하지 않고, 진행자의 안내 질문에 따라 각자의 노트에 천천히 생각을 정리하는 온라인 세션입니다.',
+      '카메라를 켜두셔도, 잠시 꺼두고 목소리만 들으셔도 괜찮습니다. 올 한 해 내가 고른 물건과 시간들을 다정하게 돌아보는 시간을 보냅니다.',
+    ],
+    targetAudience: '연말을 앞두고 소비와 일상의 기준을 차분히 정돈하고 싶은 분',
+    scheduleKst: '2026.12.06 (일) 오후 20:00 — 21:00 KST',
+    locationText: '온라인 Zoom (참여 링크는 외부 예약 완료자에게 모임 전날 발송)',
+    hostName: 'Leaf. 에디토리얼 팀',
+    capacityText: '최대 15명 (수동 상태 관리)',
+    priceText: '15,000원 (사전 질문 PDF 가이드 포함)',
+    preparations: '좋아하는 노트와 펜, 따뜻한 음료 한 잔',
+    deadlineText: '2026.12.05 (토) 18:00 KST까지',
+    refundPolicy: '네이버 예약 플랫폼 환불 규정에 따릅니다.',
+    bookingProvider: '네이버 예약',
+    externalBookingUrl: null,
+    image: heroLifestyleImg,
+    imageAlt: '집 안 창가에서 조용히 차를 마시는 모습 (시연용 이미지)',
+  },
+  {
+    id: 'exp-3',
+    slug: 'knit-darning-circle-gathering',
+    type: 'CIRCLE_GATHERING',
+    mode: 'OFFLINE',
+    status: 'FULL',
+    title: '오래 입은 니트 다시 살리기 — 다닝(Darning) 수선 모임',
+    summary: '구멍 나거나 얇아진 니트 소매와 팔꿈치를 실과 바늘로 손수 기워 입는 작은 모임.',
+    description: [
+      '버리기 아까운 오래된 니트 한 벌을 가져와 공방 선생님과 함께 다닝(Darning) 기법을 배우고 직접 수선해 봅니다.',
+      '비슷한 톤의 실로 감쪽같이 메우거나, 일부러 올리브·네이비 컬러 실로 작은 표시를 남기며 옷에 새로운 기억을 더할 수도 있습니다.',
+    ],
+    targetAudience: '가지고 있는 니트류를 직접 고쳐 입어보고 싶은 분 (초보자 가능)',
+    scheduleKst: '2026.11.21 (토) 오후 14:00 — 16:00 KST',
+    locationText: '서울 성동구 성수동 니트 공방',
+    hostName: '김선생 (니트 마이스터) · Leaf. 팀',
+    capacityText: '정원 6명 (모집 마감)',
+    priceText: '38,000원 (다닝 툴 대여 및 실 제공)',
+    preparations: '수선이 필요한 니트 1벌 지참',
+    deadlineText: '모집 마감됨',
+    refundPolicy: '네이버 예약 플랫폼 기준에 따릅니다.',
+    bookingProvider: '네이버 예약',
+    externalBookingUrl: null,
+    image: atelierImg,
+    imageAlt: '니트 공방 작업대와 원사, 수선 도구 (시연용 이미지)',
+  },
+];
+
+export const INTEGRATION_CHECKLIST = [
+  {
+    area: '의류 주문 · 결제 (네이버 스마트스토어)',
+    currentDemo: 'OPEN 회차에서 시연용 안내 모달 표시 (외부 미연결)',
+    requiredAction: '실제 사업자 스마트스토어 개설 후 각 상품 회차별 검증된 상품 URL 등록',
+    priority: 'P0 출시 필수',
+  },
+  {
+    area: '프로그램 예약 · 결제 (네이버 예약)',
+    currentDemo: '수동 모집 상태 표시 및 시연용 외부 이동 안내',
+    requiredAction: '네이버 예약 사업자 등록, 온라인/오프라인 클래스 상품 개설 및 예약 URL 연결',
+    priority: 'P0 출시 필수',
+  },
+  {
+    area: '간편 로그인 · 회원 인증 (카카오 / 네이버 OAuth)',
+    currentDemo: '브라우저 메모리 내 시연용 회원 전환(새로고침 시 초기화)',
+    requiredAction: '카카오·네이버 개발자 앱 등록, 도메인/콜백 심사, 서버 세션 및 DB Member 매핑 구축',
+    priority: 'P0 출시 필수',
+  },
+  {
+    area: '데이터베이스 · 이미지 업로드 스토리지',
+    currentDemo: '정적 시연 데이터 + 인메모리 글쓰기/댓글/재주문 희망 시연',
+    requiredAction: 'PostgreSQL/Supabase 등 DB 스키마 구축, CIRCLE 사진 업로드 스토리지 및 MIME/용량 검증, 관리자 승인 API',
+    priority: 'P0 출시 필수',
+  },
+  {
+    area: '관리자 백오피스(Back Office)',
+    currentDemo: '시연 범위 제외 (PRD 6장 구조 기준 설계)',
+    requiredAction: '상품·회차·제작 업데이트·게시글 승인·신고 처리·재주문 희망 집계용 관리자 인증 화면 구현',
+    priority: 'P0 출시 필수',
+  },
+  {
+    area: '도메인 · 법률/약관 검수',
+    currentDemo: '초안 정책 페이지(/privacy, /terms, /community-guidelines) 배치',
+    requiredAction: 'leafknit.com DNS 연결, 실제 통신판매업 정보 및 법률 검토 완료된 약관/개인정보 처리방침 반영',
+    priority: 'P0 출시 필수',
+  },
+];

@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --leaf-bg: #F5F1E9;
+    --leaf-surface: #FFFFFF;
+    --leaf-linen: #E4DACB;
+    --leaf-navy: #26364C;
+    --leaf-olive: #777A66;
+    --leaf-olive-dark: #545745;
+    --leaf-text: #353832;
+    --leaf-muted: #656860;
+    --leaf-border: rgba(53, 56, 50, 0.12);
+  }
+
+  html {
+    font-family: "Plus Jakarta Sans", "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--leaf-bg);
+    color: var(--leaf-text);
+    scroll-behavior: smooth;
+  }
+
+  .font-editorial {
+    font-family: "Cormorant Garamond", "Noto Serif KR", Georgia, serif;
+  }
+
+  .font-serif-kr {
+    font-family: "Noto Serif KR", "Cormorant Garamond", Georgia, serif;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
